@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    color: #111;
+    /* color: #5656 */
+    font-size: 16px;
+}
+
+.header {
+    height: 80px;
+    background-color: #eee;
+}
+
+.header .container {
+    height: 80px;
+    background-color: #ddd;
+}
+
+.container {
+    width: 1200px;
+    padding: 0 20px;
+    margin: 0 auto;
+    /* background-color: red; */
+}
