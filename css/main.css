@@ -1,3 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400,700&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
@@ -13,20 +17,38 @@ a {
     color: inherit;
 }
 
+.mr30 {
+    margin-right: 30px;
+}
+
+.btn {
+    width: 168px;
+    height: 48px;
+    border: 1px solid #111;
+    border-radius:  100px;
+    text-align: center;
+    line-height: 48px;
+    display: inline-block;
+}
+
+.btn.filled {
+    background-color: #111;
+    color: #fff;
+}
+
+.btn.btn_sm {
+    width: 120px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 14px;
+}
+
 body {
+    font-family: "Noto Sans KR", sans-serif;
     color: #111;
     /* color: #5656 */
     font-size: 16px;
-}
-
-.header {
-    height: 80px;
-    background-color: #eee;
-}
-
-.header .container {
-    height: 80px;
-    background-color: #ddd;
+    font-weight: 400;
 }
 
 .container {
@@ -34,4 +56,202 @@ body {
     padding: 0 20px;
     margin: 0 auto;
     /* background-color: red; */
+}
+
+/* header */
+.header {
+    height: 80px;
+}
+
+.header .container {
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.header .logo img {
+    width: 156px;
+}
+
+.header .logo { 
+    margin-right: auto;
+}
+
+.header .nav {
+    display: flex;
+}
+
+.header .nav a {
+    display: block;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    padding: 0 40px;
+}
+
+.header .nav li.on a {
+    color: #EB5757;
+}
+
+.header .nav a:hover {
+    color: #EB5757;
+}
+
+.header .cart {
+    position: relative;
+    margin-left: 40px;
+}
+
+.header .cart i {
+    font-size: 24px
+}
+
+.header .cart #count {
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    width: 18px;
+    height: 18px;
+    border-radius: 100%;
+    color: white;
+    font-size: 12px;
+    background-color: red;
+    text-align: center;
+}
+
+
+/* slider */
+.slider {
+    background-image: url("../imgs/slide.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.slider .container {
+    height: 500px;
+    position: relative;
+}
+
+.slider h2 {
+    position: absolute;
+    top: 100px;
+    left: 20px;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 1.3;
+}
+
+.slider h2 span {
+    font-size: 80px;
+}
+
+.slider .btns {
+    position: absolute;
+    top: 310px;
+    left: 20px;
+}
+
+/* product */
+.product_title{
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.product_title h2{
+    font-weight: 700px;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.product_title p{
+    color: #565656;
+}
+
+
+.product_01 {
+    display: flex;
+    gap: 40px;
+    margin: 100px 0 120px;
+}
+
+.product_01 .item {
+    width: 560px;
+    height: 320px;
+    background-color: #F5F5F5;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.product_01 h3 {
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 21px;
+}
+
+.product_01 p {
+    color: #565656;
+    margin-bottom: 37px;
+}
+
+.thumb {
+    width: 160px;
+    height: 160px;
+    position: relative;
+}
+
+.thumb img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 160px;
+    height: 160px;
+}
+
+.thumb img:first-child {
+    opacity: 1;
+    transition: all 0.3s;
+}
+
+.thumb img:last-child {
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.thumb:hover img:first-child {
+    opacity: 0;
+}
+
+.thumb:hover img:last-child {
+    opacity: 1;
+}
+
+.product_02 ul {
+    display: flex;
+    gap: 40px;
+}
+
+.product_02 ul  li {
+    background-color: #f6f6f6;
+    width: 260px;
+    height: 260px;
+    cursor: pointer;
+}
+
+.product_02 ul li img {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* banner */
+.banner {
+    height: 600px;
+    background-image: url(../imgs/bgBanner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 90px 0 120px;
 }
