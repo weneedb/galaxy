@@ -383,3 +383,8 @@ body {
     height: 70px;
     line-height: 70px;
 }
+
+.fInfo .sns {
+    font-size: 28px;
+    gap: 12px;
+}
